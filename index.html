@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <img src="./images/logo.svg" alt="logo">
+    <form action="" id="tip-calculator">
+      <section class="bill-section">
+          <label for="bill">Bill</label>
+          <small class="error-message">Can't be negative</small>
+          <input  type="number" id="bill" placeholder="0" min="0">
+      </section>
+      <section class="tip-section">
+          <label>Select Tip %</label>
+          <button type="button" value="5">5%</button>
+          <button type="button" value="10">10%</button>
+          <button type="button" value="15">15%</button>
+          <button type="button" value="25">25%</button>
+          <button type="button" value="50">50%</button>
+          <input type="number" min="0" placeholder="Custom" id="custom">
+      </section>
+      <section class="people-section">
+          <label for="people">Number of People</label>
+          <small class="error-message">Can't be zero</small>
+          <input type="number" id="people" placeholder="0">
+      </section>
+      <section class="result-section">
+        <div class="amount-div">
+          <div>
+            <p>Tip Amount</p>
+            <small>/ person</small>
+          </div>
+          <h1 id="tip-amount" >$0.00</h1>
+        </div>
+        <div class="amount-div">
+          <div>
+            <p>Total</p>
+            <small>/ person</small>
+          </div>
+          <h1 id="total-amount">$0.00</h1>
+        </div>
+        <button class="reset" type="reset">RESET</button>
+      </section>
+    </form>
+  </main>
+  
+</body>
+</html>
